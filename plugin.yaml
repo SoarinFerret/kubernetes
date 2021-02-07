@@ -15,7 +15,7 @@ providers:
     service: ResourceModelSource
     plugin-type: script
     resource-format: resourcejson
-    script-interpreter: python -u
+    script-interpreter: python3 -u
     script-file: pods-resource-model.py
     config:
       - type: String
@@ -113,7 +113,7 @@ providers:
     title: Kubernetes / Pods / Node Executor
     description: 'dispatch the command to the kubernetes pod'
     plugin-type: script
-    script-interpreter: python -u
+    script-interpreter: python3 -u
     script-file: pods-node-executor.py
     script-args: ${node.name}
     config:
@@ -176,7 +176,7 @@ providers:
     title: Kubernetes / Pods / File Copier
     description: 'Copy a file to a kubernetes pod'
     plugin-type: script
-    script-interpreter: python -u
+    script-interpreter: python3 -u
     script-file: pods-copy-file.py
     script-args: ${node.name}
     config:
@@ -238,7 +238,7 @@ providers:
     title: Kubernetes / Deployment / Create
     description: 'Create a Deployment'
     plugin-type: script
-    script-interpreter: python -u
+    script-interpreter: python3 -u
     script-file: deployment-create.py
     script-args:
     config:
@@ -437,7 +437,7 @@ providers:
     title: Kubernetes / Deployment / Update
     description: 'Update a Deployment'
     plugin-type: script
-    script-interpreter: python -u
+    script-interpreter: python3 -u
     script-file: deployment-update.py
     script-args:
     config:
@@ -603,7 +603,7 @@ providers:
     title: Kubernetes / Deployment / Delete
     description: 'Delete a Deployment'
     plugin-type: script
-    script-interpreter: python -u
+    script-interpreter: python3 -u
     script-file: deployment-delete.py
     script-args:
     config:
@@ -668,7 +668,7 @@ providers:
     title: Kubernetes / Deployment / Status
     description: 'Get Status of the deployment'
     plugin-type: script
-    script-interpreter: python -u
+    script-interpreter: python3 -u
     script-file: deployment-status.py
     script-args:
     config:
@@ -733,7 +733,7 @@ providers:
     title: Kubernetes / Deployment / Waitfor
     description: 'Waitfor Deployment'
     plugin-type: script
-    script-interpreter: python -u
+    script-interpreter: python3 -u
     script-file: deployment-wait.py
     script-args:
     config:
@@ -810,7 +810,7 @@ providers:
     title: Kubernetes / StatefulSet / Waitfor
     description: 'Waitfor StatefulSet'
     plugin-type: script
-    script-interpreter: python -u
+    script-interpreter: python3 -u
     script-file: StatefulSet-wait.py
     script-args:
     config:
@@ -887,7 +887,7 @@ providers:
     title: Kubernetes / Generic / Create
     description: 'Create a Deployment / Service / Ingress from YAML string'
     plugin-type: script
-    script-interpreter: python -u
+    script-interpreter: python3 -u
     script-file: create-from-yaml.py
     script-args:
     config:
@@ -961,7 +961,7 @@ providers:
     title: Kubernetes / Generic / Delete
     description: 'Delete a generic resource'
     plugin-type: script
-    script-interpreter: python -u
+    script-interpreter: python3 -u
     script-file: delete.py
     script-args:
     config:
@@ -1032,7 +1032,7 @@ providers:
     title: Kubernetes / Service / Create
     description: 'Create a Service'
     plugin-type: script
-    script-interpreter: python -u
+    script-interpreter: python3 -u
     script-file: service-create.py
     script-args:
     config:
@@ -1175,7 +1175,7 @@ providers:
     title: Kubernetes / Service / Update
     description: 'Update a Service'
     plugin-type: script
-    script-interpreter: python -u
+    script-interpreter: python3 -u
     script-file: service-update.py
     script-args:
     config:
@@ -1318,7 +1318,7 @@ providers:
     title: Kubernetes / Service / Delete
     description: 'Delete a Service'
     plugin-type: script
-    script-interpreter: python -u
+    script-interpreter: python3 -u
     script-file: service-delete.py
     script-args:
     config:
@@ -1383,7 +1383,7 @@ providers:
     title: Kubernetes / Job / Create
     description: 'Create a Job'
     plugin-type: script
-    script-interpreter: python -u
+    script-interpreter: python3 -u
     script-file: job-create.py
     script-args:
     config:
@@ -1627,7 +1627,7 @@ providers:
     title: Kubernetes / Job / Delete
     description: 'Delete a Job'
     plugin-type: script
-    script-interpreter: python -u
+    script-interpreter: python3 -u
     script-file: job-delete.py
     script-args:
     config:
@@ -1692,7 +1692,7 @@ providers:
     title: Kubernetes / Job / Re-Run
     description: 'Re-Run a Job (it will be deleting and creating again)'
     plugin-type: script
-    script-interpreter: python -u
+    script-interpreter: python3 -u
     script-file: job-run.py
     script-args:
     config:
@@ -1757,7 +1757,7 @@ providers:
     title: Kubernetes / Job / Waitfor
     description: 'Waitfor Job'
     plugin-type: script
-    script-interpreter: python -u
+    script-interpreter: python3 -u
     script-file: job-wait.py
     script-args:
     config:
@@ -1840,7 +1840,7 @@ providers:
     title: Kubernetes / Pods / Logs
     description: 'Get Logs from POD'
     plugin-type: script
-    script-interpreter: python -u
+    script-interpreter: python3 -u
     script-file: pods-read-logs.py
     script-args:
     config:
@@ -1915,7 +1915,7 @@ providers:
     title: Kubernetes / Pod / Create
     description: 'Create a Deployment'
     plugin-type: script
-    script-interpreter: python -u
+    script-interpreter: python3 -u
     script-file: pods-create.py
     script-args:
     config:
@@ -2096,7 +2096,7 @@ providers:
     title: Kubernetes / Pod / Delete
     description: 'Delete a Pod'
     plugin-type: script
-    script-interpreter: python -u
+    script-interpreter: python3 -u
     script-file: pods-delete.py
     script-args:
     config:
@@ -2159,7 +2159,7 @@ providers:
     title: Kubernetes / Pod / Waitfor
     description: 'Waitfor Pod ready status'
     plugin-type: script
-    script-interpreter: python -u
+    script-interpreter: python3 -u
     script-file: pods-wait.py
     script-args:
     config:
@@ -2240,7 +2240,7 @@ providers:
     title: Kubernetes / Pods / Execute Command
     description: 'Run a command to a pod'
     plugin-type: script
-    script-interpreter: python -u
+    script-interpreter: python3 -u
     script-file: pods-node-executor.py
     script-args: ${config.name}
     config:
@@ -2314,7 +2314,7 @@ providers:
     title: Kubernetes / Pods / Execute Script
     description: 'Run a script to a pod'
     plugin-type: script
-    script-interpreter: python -u
+    script-interpreter: python3 -u
     script-file: pods-run-script.py
     script-args: ${config.name}
     config:
